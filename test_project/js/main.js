@@ -83,9 +83,16 @@ $(document).ready(function () {
     }
 
     if (window.location.href.indexOf('reloj') > -1) {
-        setInterval(() => {
+        const clockDiv = $('#reloj');
+        const getTime = () => {
             const reloj = moment().format('HH:mm:ss');
-            $('#reloj').html(reloj);
+            clockDiv.html(reloj);
+        };
+
+        getTime();
+
+        setInterval(() => {
+            getTime();
         }, 1000);
     }
 });
