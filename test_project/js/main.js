@@ -84,7 +84,7 @@ $(document).ready(function () {
 
     if (window.location.href.indexOf('reloj') > -1) {
         setInterval(() => {
-            const reloj = moment().format('hh:mm:ss');
+            const reloj = moment().format('HH:mm:ss');
             $('#reloj').html(reloj);
         }, 1000);
     }
