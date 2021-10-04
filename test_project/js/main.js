@@ -63,4 +63,16 @@ $(document).ready(function () {
     $('#to-blue').click(() => {
         theme.attr('href', 'css/blue.css');
     });
+
+    //  Scroll up
+    $('.subir').click(e => {
+        e.preventDefault;
+
+        $('html, body').animate(
+            {
+                scrollTop: 0,
+            },
+            500
+        );
+    });
 });
