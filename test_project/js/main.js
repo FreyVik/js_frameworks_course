@@ -81,4 +81,11 @@ $(document).ready(function () {
     if (window.location.href.indexOf('about') > -1) {
         $('#acordeon').accordion();
     }
+
+    if (window.location.href.indexOf('reloj') > -1) {
+        setInterval(() => {
+            const reloj = moment().format('hh:mm:ss');
+            $('#reloj').html(reloj);
+        }, 1000);
+    }
 });
