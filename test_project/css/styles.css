@@ -67,7 +67,7 @@
     padding: 7px;
 }
 
-.post h2 {
+h2 {
     font-size: 30px;
     color: #333;
 }
@@ -195,4 +195,14 @@ footer {
     text-decoration: none;
     display: block;
     float: right;
+}
+
+#box {
+    width: 65%;
+    float: left;
+    margin-top: 20px;
+}
+
+#acordeon {
+    margin-top: 20px;
 }
