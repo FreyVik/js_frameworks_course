@@ -32,4 +32,6 @@ $(document).ready(function () {
         // effectsDiv.effect('explode');
         effectsDiv.toggle('scale', 1000);
     });
+
+    $(document).tooltip();
 });
