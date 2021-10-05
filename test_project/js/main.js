@@ -45,7 +45,7 @@ $(document).ready(function () {
                 <h2>${item.title}</h2>
                 <span class="date">Fecha publicacion ${item.date}</span>
                 <p>${item.content}</p>
-                <a href="#" class="button-more">Leer mas...</a>
+                <a href="#" class="button-more">Leer mas</a>
             </article>
         `;
 
