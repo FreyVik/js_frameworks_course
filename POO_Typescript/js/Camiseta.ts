@@ -50,5 +50,4 @@ class Sudadera extends Camiseta {
 
 var camiseta = new Camiseta('asd', 'asd', 'asd', 'asd', 24)
 console.log(camiseta);
-camiseta.estampacion()
 
