@@ -1,0 +1,9 @@
+var cadena = 'esto es un String';
+cadena = 8;
+// cadena = true
+var edad = 8;
+var verdadero = true;
+var any = 'hola';
+var lenguajes = ["PHP", "JS", "JAVA"];
+var years = [12, 13, 14];
+var anyArray = ["JAVA", 12, true];
