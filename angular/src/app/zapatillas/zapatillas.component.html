@@ -2,7 +2,7 @@
 
 <p>Add marca</p>
 <p>
-  <input type="text" [(ngModel)]="miMarca" />
+  <input type="text" [(ngModel)]="miMarca" (keyup.enter)="mostrarPalabra()" />
   <button (click)="getMarca()">Obtener marca</button>
   <button (click)="addMarca()">Add marca</button>
 </p>
@@ -13,6 +13,7 @@
 <ul>
   <li *ngFor="let marca of marcas; let indice = index">
     {{ indice + " " + marca }}
+    <button (click)="borrarMarca(indice)">Borrar marca</button>
   </li>
 </ul>
 
@@ -23,7 +24,15 @@
       [ngStyle]="{ 'text-decoration': tenis.stock ? 'none' : 'line-through' }"
       >{{ tenis.nombre }}</span
     >
-    - <strong>{{ tenis.precio }}$ </strong>
+    -
+    <strong
+      [class.altoPrecio]="tenis.precio >= 80"
+      [ngClass]="{
+        fondoRojo: tenis.precio > 100
+      }"
+      class="subrayado"
+      >{{ tenis.precio }}$
+    </strong>
     <span
       *ngIf="tenis.precio <= 80"
       [style.background]="tenis.precio < 80 ? 'green' : 'transparent'"
