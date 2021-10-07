@@ -9,3 +9,7 @@
 .subrayado {
   text-decoration: underline;
 }
+
+.active {
+  background: #ccc;
+}
