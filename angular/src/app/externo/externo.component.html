@@ -13,3 +13,29 @@
   <h2>{{ user.first_name + " " + user.last_name }}</h2>
   <img src="{{ user.avatar }} " alt="avatar" width="200px" />
 </div>
+
+<hr />
+<h3>Crear usuario</h3>
+
+<form #newUser="ngForm" (ngSubmit)="onSubmit(newUser)">
+  <p>
+    <label for="name">Nombre</label>
+    <input
+      type="text"
+      name="name"
+      #name="ngModel"
+      [(ngModel)]="new_user.name"
+    />
+  </p>
+
+  <p>
+    <label for="job">Trabajo</label>
+    <input type="text" name="job" #job="ngModel" [(ngModel)]="new_user.job" />
+  </p>
+
+  <input type="submit" value="Enviar" />
+
+  <h3 *ngIf="responseUser">
+    {{ "Usuario " + responseUser.name + " creado como " + responseUser.job }}
+  </h3>
+</form>
