@@ -1,0 +1,64 @@
+{
+	"info": {
+		"_postman_id": "85fd5ead-3323-4a66-ae45-026487bb0e23",
+		"name": "API-REST",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Home",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3700",
+					"host": [
+						"localhost"
+					],
+					"port": "3700"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Gonzalo",
+							"type": "text"
+						},
+						{
+							"key": "apellido",
+							"value": "Fuente",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3700/test/96?web=freyvik.com",
+					"host": [
+						"localhost"
+					],
+					"port": "3700",
+					"path": [
+						"test",
+						"96"
+					],
+					"query": [
+						{
+							"key": "web",
+							"value": "freyvik.com"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
