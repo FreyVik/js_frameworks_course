@@ -6,7 +6,7 @@ const port = 3700;
 
 mongoose.Promise = global.Promise;
 mongoose
-    .connect('mongodb://localhost:27017/protafolio')
+    .connect('mongodb://localhost:27017/portafolio')
     .then(() => {
         console.log('Conexion con mongoDB establecida con exito');
 

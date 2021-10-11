@@ -6,59 +6,295 @@
 	},
 	"item": [
 		{
-			"name": "Home",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "localhost:3700",
-					"host": [
-						"localhost"
-					],
-					"port": "3700"
+			"name": "Middleware",
+			"item": [
+				{
+					"name": "Home",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3700",
+							"host": [
+								"localhost"
+							],
+							"port": "3700"
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Test",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nombre",
+									"value": "Gonzalo",
+									"type": "text"
+								},
+								{
+									"key": "apellido",
+									"value": "Fuente",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3700/test/96?web=freyvik.com",
+							"host": [
+								"localhost"
+							],
+							"port": "3700",
+							"path": [
+								"test",
+								"96"
+							],
+							"query": [
+								{
+									"key": "web",
+									"value": "freyvik.com"
+								}
+							]
+						}
+					},
+					"response": []
 				}
-			},
-			"response": []
+			]
 		},
 		{
-			"name": "Test",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "urlencoded",
-					"urlencoded": [
-						{
-							"key": "nombre",
-							"value": "Gonzalo",
-							"type": "text"
-						},
-						{
-							"key": "apellido",
-							"value": "Fuente",
-							"type": "text"
+			"name": "ProjectRoutes",
+			"item": [
+				{
+					"name": "Test",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:3700/api/test",
+							"host": [
+								"localhost"
+							],
+							"port": "3700",
+							"path": [
+								"api",
+								"test"
+							]
 						}
-					]
+					},
+					"response": []
 				},
-				"url": {
-					"raw": "localhost:3700/test/96?web=freyvik.com",
-					"host": [
-						"localhost"
-					],
-					"port": "3700",
-					"path": [
-						"test",
-						"96"
-					],
-					"query": [
-						{
-							"key": "web",
-							"value": "freyvik.com"
+				{
+					"name": "Home",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3700/api/home",
+							"host": [
+								"localhost"
+							],
+							"port": "3700",
+							"path": [
+								"api",
+								"home"
+							]
 						}
-					]
+					},
+					"response": []
+				},
+				{
+					"name": "Save project",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nombre",
+									"value": "facebook.com",
+									"type": "text"
+								},
+								{
+									"key": "descripcion",
+									"value": "Red social",
+									"type": "text"
+								},
+								{
+									"key": "category",
+									"value": "Desarrollo web",
+									"type": "text"
+								},
+								{
+									"key": "langs",
+									"value": "PHP",
+									"type": "text"
+								},
+								{
+									"key": "year",
+									"value": "2004",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3700/api/save-project",
+							"host": [
+								"localhost"
+							],
+							"port": "3700",
+							"path": [
+								"api",
+								"save-project"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get project",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3700/api/project/6163f557465f7ff89094daff",
+							"host": [
+								"localhost"
+							],
+							"port": "3700",
+							"path": [
+								"api",
+								"project",
+								"6163f557465f7ff89094daff"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Projects",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3700/api/projects",
+							"host": [
+								"localhost"
+							],
+							"port": "3700",
+							"path": [
+								"api",
+								"projects"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update project",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nombre",
+									"value": "facebook.com",
+									"type": "text"
+								},
+								{
+									"key": "descripcion",
+									"value": "Red social",
+									"type": "text"
+								},
+								{
+									"key": "category",
+									"value": "Desarrollo web y movil",
+									"type": "text"
+								},
+								{
+									"key": "langs",
+									"value": "PHP, Python, Nodejs",
+									"type": "text"
+								},
+								{
+									"key": "year",
+									"value": "2004",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3700/api/project/6163f799c50aa098669e3633",
+							"host": [
+								"localhost"
+							],
+							"port": "3700",
+							"path": [
+								"api",
+								"project",
+								"6163f799c50aa098669e3633"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete project",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3700/api/project/6163f557465f7ff89094daff",
+							"host": [
+								"localhost"
+							],
+							"port": "3700",
+							"path": [
+								"api",
+								"project",
+								"6163f557465f7ff89094daff"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Upload image",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": []
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3700/api/upload-image/6163f799c50aa098669e3633",
+							"host": [
+								"localhost"
+							],
+							"port": "3700",
+							"path": [
+								"api",
+								"upload-image",
+								"6163f799c50aa098669e3633"
+							]
+						}
+					},
+					"response": []
 				}
-			},
-			"response": []
+			]
 		}
 	]
 }
