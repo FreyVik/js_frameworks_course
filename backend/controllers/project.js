@@ -141,7 +141,7 @@ const controller = {
         let fileName = 'Imagen no subida...';
 
         if (req.files) {
-            const filePath = req.files.file.path;
+            const filePath = req.files.image.path;
             const fileSplit = filePath.split('/');
             fileName = fileSplit[1];
 
